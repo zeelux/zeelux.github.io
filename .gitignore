@@ -4,3 +4,8 @@ node_modules
 
 .idea/*
 .vscode/*
+.idea/
+_site/*
+_site/
+
+_site/README.md

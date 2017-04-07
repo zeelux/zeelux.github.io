@@ -134,10 +134,16 @@ a { color: #63c0f5; text-shadow: 0 0 5px rgba(104, 182, 255, 0.5); }
 
 .cf { zoom: 1; }
 
+a { cursor: pointer; }
+
+header h1 a { color: #b5e853; }
 header h2 { margin-bottom: 0; }
 header section#downloads { float: right; }
 
 .container { max-width: 900px; }
+
+aside.navigation { width: calc(50% - 450px); position: fixed; left: 0; top: 150px; overflow-x: scroll; }
+aside.navigation ul li:before { content: '||'; margin-left: -25px; margin-right: 8px; }
 
 #main_content { max-height: calc(100% - 178px); overflow-y: auto; }
 #main_content ul { padding-left: 45px; }

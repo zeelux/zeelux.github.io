@@ -1,3 +1,4 @@
 theme: jekyll-theme-hacker
 site.title: DerekPinkerton.com
-site.description: Test
+gems:
+  - jekyll-sitemap
