@@ -17,5 +17,23 @@ git add [path/to/file]
 git add .
 ```
 * Switch branch
+```git
+git checkout <<branch name>>
+```
 * Commit pending changes
+```git
+git commit -m "<<Commit Message>>"
+```
 * Get latest from remote
+```git
+git pull
+```
+* Create and switch to new branch, leaving unstaged pending changes in workspace. Then stage changes.
+```git
+git checkout -b <<branch name>>
+git add *
+```
+* Push chagnes to remote where the branch doesn't exist yet
+```git
+git push --set-upstream origin <<branch-name>>
+```
