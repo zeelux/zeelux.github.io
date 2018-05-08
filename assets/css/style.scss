@@ -51,15 +51,23 @@ aside.navigation {
         margin-right: 8px;
     }
 }
-aside.right-gutter {
-    width: calc(50% - 425px);
-    position: fixed;
-    right: 0;
-    top: 150px;
-    overflow: scroll;
-    max-height: calc(100% - 183px);
+@media only screen and (min-device-width: 1px) and (max-device-width: 1218px) {  
+    aside.right-gutter {
+        width: 50%;
+        overflow: scroll;
+        max-height: calc(100% - 183px);
+    }
 }
-
+@media only screen and (min-device-width: 1219px) {  
+    aside.right-gutter {
+        width: calc(50% - 425px);
+        position: fixed;
+        right: 0;
+        top: 150px;
+        overflow: scroll;
+        max-height: calc(100% - 183px);
+    }
+}
 .pull-left {
     float: left;
     margin-right: 40px;
