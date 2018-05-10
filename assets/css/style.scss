@@ -19,9 +19,9 @@ header {
     }
 }
 
-.container { 
-    max-width: 850px;
+.container {
     padding: 0 8px;
+    max-width: calc(90% - 350px);
 }
 
 #main_content {
@@ -39,28 +39,22 @@ header {
 }
 
 aside.navigation {
-    width: calc(50% - 425px);
+    width: 200px;
     position: fixed;
     left: 0;
-    top: 150px;
+    top: 140px;
     overflow-x: scroll;
-
-    ul li:before {
-        content: '/';
-        margin-left: -25px;
-        margin-right: 8px;
-    }
 }
-@media only screen and (min-device-width: 1px) and (max-device-width: 1218px) {  
+@media only screen and (min-device-width: 1px) and (max-device-width: 650px) {
     aside.right-gutter {
         display: none;
     }
 }
-@media only screen and (min-device-width: 1219px) {  
+@media only screen and (min-device-width: 649px) {
     aside.right-gutter {
-        width: calc(50% - 425px);
+        width: 200px;
         position: fixed;
-        right: 0;
+        right: 10px;
         top: 150px;
         overflow: scroll;
         max-height: calc(100% - 183px);
