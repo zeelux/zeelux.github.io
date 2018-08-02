@@ -78,3 +78,19 @@ footer {
     padding-top: 7px;
     font-size: 9pt;
 }
+
+
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+img.profile-pic {
+    display: inline;
+    margin: -20px auto;
+    width: 200px;
+    height: auto;
+}

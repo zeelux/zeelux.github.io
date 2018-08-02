@@ -1,5 +1,7 @@
 # About Me
-<img alt="me" src="assets/images/me.jpeg" class="pull-left">
+<div class="pull-left image-cropper">
+    <img alt="me" src="assets/images/derek-caricature-c.png" class="profile-pic">
+</div>
 I've been programming professionally since 1999. Just about all of this
 time has been spent developing for the web. Back in my early days I was 
 using Linux/Apache/MySQL/Perl, my version of LAMP 😀. Then it was on to 
