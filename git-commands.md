@@ -37,12 +37,15 @@ git add *
 ```git
 git push --set-upstream origin <<branch-name>>
 ```
+* Undo local changes to a tracked file
+```git
+git checkout -- <<File Name1>> <<File Name2>>
+```
 
-* Moving committed changes to a new branch
+## Moving committed changes to a new branch
+I sometimes accidentally commit changes on the master branch locally. If that is a protected branch on the remote server that you cannot commit directly to, you need to move these changes to another branch and rollback master. 
 
-I've frequently accidentally commited changes on the master branch locally. Since that is a protected branch in my case I need to move these changes to another branch and rollback master. 
-
-# Note: Any changes not committed will be lost.
+### Note: Any changes not committed will be lost.
 ```git
 git branch newbranch      # Create a new branch, saving the desired commits
 git reset --hard HEAD~3   # Move master back by 3 commits (GONE from master)
