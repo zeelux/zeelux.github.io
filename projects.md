@@ -2,7 +2,7 @@
 ## Samples
 * [Conway's Game of Life](https://github.com/zeelux/conways-game-of-life){:target="_blank"}
     An implementation of Conway's Game of Life using an HTML Canvas element to render.
-    <img src="./assets/images/game-of-life.png" alt="Game of Life screenshot" />
+    <img src="./assets/images/game-of-life.png" alt="Game of Life screenshot" class="sample-screenshot"/>
 * [BlackJack Bot Runner](https://blackjack-rvnug.azurewebsites.net){:target="_blank"}
     Players code a bot using a built-in JavaScript editor to play BlackJack. [Source](https://github.com/RVNUG/blackjack){:target="_blank"}
 
