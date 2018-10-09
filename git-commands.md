@@ -41,6 +41,19 @@ git push --set-upstream origin <<branch-name>>
 ```git
 git checkout -- <<File Name1>> <<File Name2>>
 ```
+* List remote branches that are not tracked locally
+```git
+git fetch
+git branch -r
+```
+OR
+```git
+git remote show <remote-name>
+```
+* After fetching remote branches, check one of them out locally
+```git
+git checkout -b <branch-name> <name-of-remote>/<branch-name>
+```
 
 ## Moving committed changes to a new branch
 I sometimes accidentally commit changes on the master branch locally. If that is a protected branch on the remote server that you cannot commit directly to, you need to move these changes to another branch and rollback master. 
