@@ -5,53 +5,53 @@ common commands here as a quick reference for myself when I need/want
 to use terminal instead.
 
 * Remove a file from version control (untrack)
-```git
+```shell
  git rm --cached --force [path/to/file]
 ```
 * Add a single file
-```git
+```shell
 git add [path/to/file]
 ```
 * Add all files (excluding those in .gitignore)
-```git
+```shell
 git add .
 ```
 * Switch branch
-```git
+```shell
 git checkout <<branch name>>
 ```
 * Commit pending changes
-```git
+```shell
 git commit -m "<<Commit Message>>"
 ```
 * Get latest from remote
-```git
+```shell
 git pull
 ```
 * Create and switch to new branch, leaving unstaged pending changes in workspace. Then stage changes.
-```git
+```shell
 git checkout -b <<branch name>>
 git add *
 ```
 * Push changes to remote where the branch doesn't exist yet
-```git
+```shell
 git push --set-upstream origin <<branch-name>>
 ```
 * Undo local changes to a tracked file
-```git
+```shell
 git checkout -- <<File Name1>> <<File Name2>>
 ```
 * List remote branches that are not tracked locally
-```git
+```shell
 git fetch
 git branch -r
 ```
 OR
-```git
+```shell
 git remote show <remote-name>
 ```
 * After fetching remote branches, check one of them out locally
-```git
+```shell
 git checkout -b <branch-name> <name-of-remote>/<branch-name>
 ```
 
@@ -59,17 +59,17 @@ git checkout -b <branch-name> <name-of-remote>/<branch-name>
 I sometimes accidentally commit changes on the master branch locally. If that is a protected branch on the remote server that you cannot commit directly to, you need to move these changes to another branch and rollback master. 
 
 ### Note: Any changes not committed will be lost.
-```git
+```shell
 git branch newbranch      # Create a new branch, saving the desired commits
 git reset --hard HEAD~3   # Move master back by 3 commits (GONE from master)
 git checkout newbranch    # Go to the new branch that still has the desired commits
 ```
 But do make sure how many commits to go back. Alternatively, you can instead of HEAD~3, simply provide the hash of the commit (or the reference like origin/master) you want to "revert back to" on the master (/current) branch, e.g:
-```git
+```shell
 git reset --hard a1b2c3d4
 ```
 Similar approach with slightly different commands
-```git
+```shell
 git checkout -b newbranch # Create a new branch that includes the desired commits (current state of master)
 git checkout master       # Switch back to master
 git reset --hard HEAD~1   # Move master back by 1 commit (GONE from master)
