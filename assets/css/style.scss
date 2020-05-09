@@ -9,24 +9,47 @@ body {
     column-gap: 5px;
 
     grid-template-columns: 200px auto 250px;
-    grid-template-rows: 200px auto;
+    grid-template-rows: 145px auto;
 }
 
 a {
     cursor: pointer;
 }
 
+// reset default bottom margin on section elements from theme.
+section {
+    margin: 0
+}
+
 header {
     grid-column: 1 / span 3;
     grid-row-start: 1;
-    justify-self: center;
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto 175px;
+        grid-template-rows: auto;
 
-    h1 a {
-        color: #b5e853;
+        h1 a {
+            color: #b5e853;
+        }
+        h2 {
+            margin-bottom: 0;
+        }
+
+        #downlaods {
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+
+        #title {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            align-self: center;
+            justify-self: center;
+        }
     }
-    h2 {
-        margin-bottom: 0;
-    }
+
 }
 
 aside {
