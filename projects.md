@@ -1,4 +1,7 @@
 # Projects
+* [Voice](https://voice.com){:target="_blank"}
+  Current day job involves working all the Voice.com web frontend as well as the api/backend services.
+
 ## Samples
 * [Conway's Game of Life](https://github.com/zeelux/conways-game-of-life){:target="_blank"}
     An implementation of Conway's Game of Life using an HTML Canvas element to render.
