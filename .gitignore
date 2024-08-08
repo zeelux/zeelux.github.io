@@ -9,3 +9,5 @@ _site/*
 _site/
 
 _site/README.md
+
+.DS_Store

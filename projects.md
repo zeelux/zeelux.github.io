@@ -1,6 +1,10 @@
 # Projects
+* [Tracer](https://tracer.tech){:target="_blank"}
+  At Tracer I work on backend services in Python.
+
 * [Voice](https://voice.com){:target="_blank"}
-  Current day job involves working all the Voice.com web frontend as well as the api/backend services.
+  Voice was a social media network to start with, then rebranded as an NFT trading site.
+  I was working across the Voice.com web frontend as well as the api/backend services.
 
 ## Samples
 * [Conway's Game of Life](https://github.com/zeelux/conways-game-of-life){:target="_blank"}
