@@ -75,3 +75,25 @@ git checkout master       # Switch back to master
 git reset --hard HEAD~1   # Move master back by 1 commit (GONE from master)
 git checkout newbranch    # Go to the new branch that still has the desired commits
 ```
+
+## Ignoring changes for a tracked file
+
+To prevent local changes for a specific file from being added to a Git commit, one can use the git update-index command with the --skip-worktree flag. 
+This tells Git to ignore changes to the specified file in the working directory. Mark the file to be ignored.
+
+```shell
+ it update-index --skip-worktree <file_path>
+```
+
+Replace <file_path> with the actual path to the file. Verify the file is marked.
+
+```shell
+git ls-files -v
+```
+Files with the S flag in the output are marked with --skip-worktree. To revert and track changes again.
+
+```shell
+git update-index --no-skip-worktree <file_path>
+```
+
+This will remove the skip-worktree flag and changes will be tracked again.
