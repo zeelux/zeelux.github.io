@@ -97,3 +97,14 @@ git update-index --no-skip-worktree <file_path>
 ```
 
 This will remove the skip-worktree flag and changes will be tracked again.
+
+## Pain-free rebase after squash merges
+
+use `git rebase --onto main feature-branch-a` from the new branch e.g. `feature-branch-b` that was branched off of
+`feature-branch-a` and subsequently squash merged onto main. This will ignore all the commit history
+from `feature-branch-a` when rebasing the `feature-branch-b` branch, thereby only including the new commits
+in that branch.
+
+See this stack overflow question's very detailed answer for more info.
+
+https://stackoverflow.com/questions/56804649/how-to-rebase-branch-against-master-after-parent-is-squashed-and-committed
